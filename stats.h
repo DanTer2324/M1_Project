@@ -9,13 +9,13 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file <stats.h> 
+ * @brief <Provide function prototypes for assignment 1 >
  *
  * <Add Extended Description Here>
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author <Dan T>
+ * @date <09/07/2025 >
  *
  */
 #ifndef __STATS_H__
@@ -24,17 +24,25 @@
 /* Add Your Declarations and Function Comments here */ 
 
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief <print_statistics()>
  *
- * <Add Extended Description Here>
+ * < Function that is called from main() to sequentially
+ *   compute statistical values>
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
+ * @param <arr> <Input data array>
  *
- * @return <Add Return Informaiton here>
- */
-
-
+ * @return <No return value, just print to stdout>
+ **/
+/**
+ *  * @brief <print_statistics()>
+ *   *
+ *    * < Function that is called from main() to sequentially
+ *     *   compute statistical values>
+ *      *
+ *       * @param <arr> <Input data array>
+ *        *
+ *         * @return <No return value, just print to stdout>
+ *          :q
+ * :::
+ * qqq/
 #endif /* __STATS_H__ */
