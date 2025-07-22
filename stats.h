@@ -106,6 +106,6 @@ int find_minimum(unsigned char* arr, unsigned int n);
  *
  * @return <Unsigned char pointer to sorted array>
  */
-char* sort_array(unsigned char* arr, unsigned int n);
+unsigned char* sort_array(unsigned char* arr, unsigned int n);
 
 #endif /* __STATS_H__ */

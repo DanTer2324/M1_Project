@@ -37,25 +37,24 @@ void main() {
 
 
   /* Other Variable Declarations Go Here */
-  const unsigned int arr_length = sizeof(test);
 
   /* Statistics and Printing Functions Go Here */
-  sort_array(&test, arr_length);
-  print_statistics(&test, arr_length);
+  sort_array(&test, SIZE);
+  print_statistics(&test, SIZE);
 }
 
 /* Add other Implementation File Code Here */
-void print_statistics(char* arr, unsigned int n){
-  float med = find_median(arr, arr_length);
-  float mean = find_mean(arr, arr_length);
-  int max = find_maximum(arr, arr_length);
-  int min = find_minimum(arr, arr_length);
+void print_statistics(unsigned char* arr, unsigned int n){
+  float med = find_median(arr, n);
+  float mean = find_mean(arr, n);
+  int max = find_maximum(arr, n);
+  int min = find_minimum(arr, n);
 
   printf("Median = %.2f, Mean = %.2f, Max = %2d, Min = %2d\n", med, mean, max, min);
 
 }
 
-float find_median(char* arr, unsigned int n){
+float find_median(unsigned char* arr, unsigned int n){
   unsigned float med = 0;
 
   if (n % 2 == 0){
@@ -67,7 +66,7 @@ float find_median(char* arr, unsigned int n){
   return med;
 }
 
-float find_mean(char* arr, unsigned int n){
+float find_mean(unsigned char* arr, unsigned int n){
   unsigned int sum = 0;
   float mean = 0;
   for(int i = 0; i < n; i++){
@@ -77,15 +76,15 @@ float find_mean(char* arr, unsigned int n){
   return mea;n
 }
 
-int find_maximum(char* arr, unsigned int n){
+int find_maximum(unsigned char* arr, unsigned int n){
   return arr[0];
 }
 
-int find_minimum(char* arr, unsigned int n){
+int find_minimum(unsigned char* arr, unsigned int n){
   return arr[n-1];
 }
 
-char* sort_array(char* arr, unsigned int n){
+char* sort_array(unsigned char* arr, unsigned int n){
   // Insertion sort implementation
   unsigned int i = 0;
   unsigned int j = 0;
