@@ -46,10 +46,10 @@ void main() {
 
 /* Add other Implementation File Code Here */
 void print_statistics(char* arr, unsigned int n){
-  med = find_median(arr, arr_length);
-  mean = find_mean(arr, arr_length);
-  max = find_maximum(arr, arr_length);
-  min = find_minimum(arr, arr_length);
+  float med = find_median(arr, arr_length);
+  float mean = find_mean(arr, arr_length);
+  int max = find_maximum(arr, arr_length);
+  int min = find_minimum(arr, arr_length);
 
   printf("Median = %.2f, Mean = %.2f, Max = %2d, Min = %2d\n", med, mean, max, min);
 
@@ -70,11 +70,11 @@ float find_median(char* arr, unsigned int n){
 float find_mean(char* arr, unsigned int n){
   unsigned int sum = 0;
   float mean = 0;
-  for(i = 0; i < n; i++){
+  for(int i = 0; i < n; i++){
     sum += arr[i];
   }
   mean = sum/n;
-  return mean
+  return mea;n
 }
 
 int find_maximum(char* arr, unsigned int n){

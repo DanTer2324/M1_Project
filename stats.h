@@ -1,3 +1,4 @@
+
 /******************************************************************************
  * Copyright (C) 2017 by Alex Fosdick - University of Colorado
  *
@@ -32,7 +33,7 @@
  *
  * @return <No return value, just print to stdout>
  */
-void print_statistics(char* arr, unsigned int n);
+void print_statistics(unsigned char* arr, unsigned int n);
 
 /**
  * @brief <print_array()>
@@ -44,7 +45,7 @@ void print_statistics(char* arr, unsigned int n);
  *
  * @return <No return value, just print to stdout>
  */
-void print_array(char* arr, unsigned int n);
+void print_array(unsigned char* arr, unsigned int n);
 
 
 /**
@@ -57,7 +58,7 @@ void print_array(char* arr, unsigned int n);
  *
  * @return <median> <float value as the median of input array>
  */
-float find_median(char* arr, unsigned int n);
+float find_median(unsigned char* arr, unsigned int n);
 
 /**
  * @brief <find_mean()>
@@ -69,7 +70,7 @@ float find_median(char* arr, unsigned int n);
  *
  * @return <median> <float value as the mean of input array>
  */
-float find_mean(char* arr, unsigned int n);
+float find_mean(unsigned char* arr, unsigned int n);
 
 /**
  * @brief <find_maximum()>
@@ -81,7 +82,7 @@ float find_mean(char* arr, unsigned int n);
  *
  * @return <maximum> <integer value of the largest element of input array>
  */
-int find_maximum(char* arr, unsigned int n);
+int find_maximum(unsigned char* arr, unsigned int n);
 
 /**
  * @brief <find_minimum()>
@@ -93,7 +94,7 @@ int find_maximum(char* arr, unsigned int n);
  *
  * @return <maximum> <integer value of the smallest element of input array>
  */
-int find_minimum(char* arr, unsigned int n);
+int find_minimum(unsigned char* arr, unsigned int n);
 
 /**
  * @brief <sort_array()>
@@ -105,6 +106,6 @@ int find_minimum(char* arr, unsigned int n);
  *
  * @return <Unsigned char pointer to sorted array>
  */
-char* sort_array(char* arr, unsigned int n);
+char* sort_array(unsigned char* arr, unsigned int n);
 
 #endif /* __STATS_H__ */
