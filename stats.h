@@ -12,8 +12,6 @@
  * @file <stats.h> 
  * @brief <Provide function prototypes for assignment 1 >
  *
- * <Add Extended Description Here>
- *
  * @author <Dan T>
  * @date <09/07/2025 >
  *
@@ -26,23 +24,87 @@
 /**
  * @brief <print_statistics()>
  *
- * < Function that is called from main() to sequentially
- *   compute statistical values>
+ * < A function that computes and prints the statistics of 
+ *   an array including minimum, maximum, mean, and median. >
  *
- * @param <arr> <Input data array>
+ * @param <*arr> <Unsigned char pointer to an array>
+ * @param <n>    <Unsigned integer as the size of the array>
  *
  * @return <No return value, just print to stdout>
- **/
+ */
+void print_statistics(char* arr, unsigned int n);
+
 /**
- *  * @brief <print_statistics()>
- *   *
- *    * < Function that is called from main() to sequentially
- *     *   compute statistical values>
- *      *
- *       * @param <arr> <Input data array>
- *        *
- *         * @return <No return value, just print to stdout>
- *          :q
- * :::
- * qqq/
+ * @brief <print_array()>
+ *
+ * < A function that prints the elements of the array pointed to>
+ *
+ * @param <*arr> <Unsigned char pointer to an array>
+ * @param <n>    <Unsigned integer as the size of the array>
+ *
+ * @return <No return value, just print to stdout>
+ */
+void print_array(char* arr, unsigned int n);
+
+
+/**
+ * @brief <find_median()>
+ *
+ * < A function that computes the median of an input array >
+ *
+ * @param <*arr> <Unsigned char pointer to a sorted array>
+ * @param <n>    <Unsigned integer as the size of the array>
+ *
+ * @return <median> <float value as the median of input array>
+ */
+float find_median(char* arr, unsigned int n);
+
+/**
+ * @brief <find_mean()>
+ *
+ * < A function that computes the mean of an input array >
+ *
+ * @param <*arr> <Unsigned char pointer to a sorted array>
+ * @param <n>    <Unsigned integer as the size of the array>
+ *
+ * @return <median> <float value as the mean of input array>
+ */
+float find_mean(char* arr, unsigned int n);
+
+/**
+ * @brief <find_maximum()>
+ *
+ * < A function that computes the maximum of an input array >
+ *
+ * @param <*arr> <Unsigned char pointer to a sorted array>
+ * @param <n>    <Unsigned integer as the size of the array>
+ *
+ * @return <maximum> <integer value of the largest element of input array>
+ */
+int find_maximum(char* arr, unsigned int n);
+
+/**
+ * @brief <find_minimum()>
+ *
+ * < A function that computes the minimum of an input array >
+ *
+ * @param <*arr> <Unsigned char pointer to a sorted array>
+ * @param <n>    <Unsigned integer as the size of the array>
+ *
+ * @return <maximum> <integer value of the smallest element of input array>
+ */
+int find_minimum(char* arr, unsigned int n);
+
+/**
+ * @brief <sort_array()>
+ *
+ * < A function that sorts an input array in-place from largest to smallest>
+ *
+ * @param <*arr> <Unsigned char pointer to an array>
+ * @param <n>    <Unsigned integer as the size of the array>
+ *
+ * @return <Unsigned char pointer to sorted array>
+ */
+char* sort_array(char* arr, unsigned int n);
+
 #endif /* __STATS_H__ */
