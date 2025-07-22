@@ -55,13 +55,13 @@ void print_statistics(unsigned char* arr, unsigned int n){
 }
 
 float find_median(unsigned char* arr, unsigned int n){
-  unsigned float med = 0;
+  float med = 0;
 
   if (n % 2 == 0){
     med = (arr[n/2] + arr[n/2 + 1])/2;
   }
   else if (n % 2 != 0){
-    med = arr[n/2 + 1]
+    med = arr[n/2 + 1];
   }
   return med;
 }
@@ -73,7 +73,7 @@ float find_mean(unsigned char* arr, unsigned int n){
     sum += arr[i];
   }
   mean = sum/n;
-  return mea;n
+  return mean;
 }
 
 int find_maximum(unsigned char* arr, unsigned int n){
@@ -84,7 +84,7 @@ int find_minimum(unsigned char* arr, unsigned int n){
   return arr[n-1];
 }
 
-char* sort_array(unsigned char* arr, unsigned int n){
+unsigned char* sort_array(unsigned char* arr, unsigned int n){
   // Insertion sort implementation
   unsigned int i = 0;
   unsigned int j = 0;
